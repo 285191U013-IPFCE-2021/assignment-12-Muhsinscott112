@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/build",
+  "command": "/usr/bin/clang++  -I/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/mymath.dir/src/duration.cpp.o -c /Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/src/duration.cpp",
+  "file": "/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/src/duration.cpp"
+},
+{
+  "directory": "/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/build",
+  "command": "/usr/bin/clang++  -I/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/src/main.cpp",
+  "file": "/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/src/main.cpp"
+},
+{
+  "directory": "/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/tests/include -I/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++14 -o CMakeFiles/tests.dir/src/tests.cpp.o -c /Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/tests/src/tests.cpp",
+  "file": "/Users/madaxweyne/Desktop/C:C++/assignment-12-Muhsinscott112/tests/src/tests.cpp"
+}
+]
