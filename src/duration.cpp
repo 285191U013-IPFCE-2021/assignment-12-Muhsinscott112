@@ -1,5 +1,6 @@
 
-#include "../tests/include/duration.h"
+
+#include "../include/duration.h"
 
 int Duration::getDuration()
 {
@@ -14,6 +15,8 @@ Duration::Duration()
     /* complete this method */
 
     time = 0;
+    alarm = 12;
+    alarmHasBeenSet = false;
 }
 
 Duration::Duration(int t)
@@ -23,27 +26,55 @@ Duration::Duration(int t)
     assert(t >= 0); // pre-condition
 
     time = t;
+    alarm = 12;
+    alarmHasBeenSet = false;
 }
 
-void Duration::tick()
+Duration::~Duration(){}
+
+bool Duration::checkAndUpdateAlarm() {
+    if(time >= alarm && alarmHasBeenSet) {
+        alarmHasBeenSet = false;
+        alarm = 0;
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool Duration::tick()
 {
 
 /* complete this method */
 
-time++;
+time += 1;
+
+return checkAndUpdateAlarm();
 
 }
 
-// void Duration::tick(int dt)
-// {
+bool Duration::tick(int dt)
+{
 
 /* complete this method */
 
-// time += 1;
+assert(dt >= 0);
 
-// }
+time += dt;
 
-// void Duration::setAlarm(int t)
-// {
+return checkAndUpdateAlarm();
+
+}
+
+void Duration::setAlarm(int t)
+{
 /* complete this method */
-// }
+if (t <= time)
+    return;
+else 
+    alarmHasBeenSet = true;
+    alarm = t;
+}
+
+
